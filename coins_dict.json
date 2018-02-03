@@ -1,1 +1,1 @@
-{"coinmarketcap": {"BTC": "bitcoin"}, "nocks": {"NLG": "NLG-EUR"}, "poloniex": {"ETH": "BTC_ETH"}}
+{"coinmarketcap": {"BTC": "bitcoin", "USDT":"tether"}, "nocks": {"NLG": "NLG-EUR"}, "poloniex": {"ETH": "BTC_ETH"}}

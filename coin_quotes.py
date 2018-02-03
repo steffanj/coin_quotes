@@ -1,8 +1,10 @@
 # -*- coding: utf-8 -*-
 """
-Spyder Editor
+Script to retrieve coin-EUR exchange rates for some cryptocurrencies from 
+several exchanges. The coins and parameters (parameters = whatever should be 
+specified after the exchanges' base_url to retrieve the desired XR) should be 
+provided in a separate .json file. An example can be found in 
 
-This is a temporary script file.
 """
 
 import requests
@@ -79,7 +81,7 @@ def get_xr(coins_dict):
             print('Something went wrong with parsing the JSON from {}'.format(
                     quote))
         finally:
-            request.close()      
+            request.close()            
     
     return xr
 
@@ -93,7 +95,6 @@ def main():
     coins_dict_fp = input('Please prove a path to your coins saved in a JSON file:\n')
     if coins_dict_fp == "":
         coins_dict_fp = 'coins_dict.json'
-    print(coins_dict_fp)
     
     try: 
         fh = open(coins_dict_fp, 'r')
